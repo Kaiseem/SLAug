@@ -1,0 +1,46 @@
+model:
+  target: segmentation_models_pytorch.Unet
+  params:
+    encoder_name: efficientnet-b2
+    encoder_weights: null
+    in_channels: 1
+    classes: 5
+    activation: null
+
+optimizer:
+  target: torch.optim.Adam
+  learning_rate: 3e-4
+  weight_decay: 3e-5
+  max_epoch: 2000
+  max_iter: -1
+  warmup_iter: -1
+  lr_scheduler: lambda
+
+saliency_balancing_fusion:
+  usage: true
+  grid_size: 3
+
+data:
+  target: main.DataModuleFromConfig
+  params:
+    batch_size: 32
+    num_workers: 8
+    train:
+      target: dataloaders.AbdominalDataset.get_training
+      params:
+        location_scale: true
+        modality:
+          - CHAOST2
+        tile_z_dim: 1
+    validation:
+      target: dataloaders.AbdominalDataset.get_validation
+      params:
+        modality:
+          - CHAOST2
+        tile_z_dim: 1
+    test:
+      target: dataloaders.AbdominalDataset.get_test_all
+      params:
+        modality:
+          - SABSCT
+        tile_z_dim: 1

@@ -1,0 +1,11 @@
+matplotlib==3.4.3
+monai==0.8.1
+numpy==1.22.4+mkl
+omegaconf==2.0.0
+opencv_python_headless==4.5.4.60
+scipy==1.7.1
+SimpleITK==2.2.0
+torch==1.10.1+cu113
+torchvision==0.11.2+cu113
+tqdm==4.62.3
+segmentation-models-pytorch==0.2.1
