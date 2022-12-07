@@ -9,7 +9,6 @@ Both University of Liverpool and Xi'an Jiaotong-liverpool University \
 
 Single-source domain generalization (SDG) in medical image segmentation is a challenging yet essential task as domain shifts are quite common among clinical image datasets. Previous attempts most conduct global-only/random augmentation.  Their augmented samples are usually insufficient in diversity and informativeness, thus failing to cover the possible target domain distribution. In this paper, we rethink the data augmentation strategy for SDG in medical image segmentation. Motivated by the class-level representation invariance and style mutability of medical images, we hypothesize that  unseen target data can be sampled from a linear combination of C (the class number) random variables, where each variable follows a location-scale distribution at the class level. Accordingly, data augmented can be readily made by sampling the random variables through a general form. On the empirical front, we implement such strategy with constrained Bezier transformation on both  global and  local (i.e. class-level) regions, which can largely increase the augmentation diversity.  A Saliency-balancing Fusion mechanism is further proposed to enrich the informativeness by engaging the gradient information, guiding augmentation with proper orientation and magnitude. As an important contribution, we prove theoretically that our proposed augmentation can lead to an upper bound of the generalization risk on the unseen  target domain, thus confirming our hypothesis. Combining the two strategies, our Saliency-balancing Location-scale Augmentation (SLAug) exceeds the state-of-the-art works by a large margin in two challenging SDG tasks.
 
-
 ## News:
 \[2022/12/1\] We release the training and inference code, even including the pretrained checkpoints and the processed dataset!
 
@@ -179,12 +178,12 @@ python python main.py --base configs/efficientUnet_LEG_to_bSSFP.yaml --seed 23
 ```
 </details>
 
-
 ## Acknowledgements
 
 Our codes are built upon [CSDG](https://github.com/cheng-01037/Causality-Medical-Image-Domain-Generalization), thanks for theri contribution to the community and the development of researches!
 
 ## Citation
+If our work or code helps you, please consider to cite our paper. Thank you!
 
 ```
 @inproceedings{su2023slaug,
