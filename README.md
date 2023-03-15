@@ -153,12 +153,12 @@ To reproduce the performance, you need one 3090 GPU
   
 For direction MRI -> CT, run the command 
 ```bash
-python python main.py --base configs/efficientUnet_SABSCT_to_CHAOS.yaml --seed 23
+python main.py --base configs/efficientUnet_SABSCT_to_CHAOS.yaml --seed 23
 ```
 
 For direction CT -> MRI, run the command 
 ```bash
-python python main.py --base configs/efficientUnet_CHAOS_to_SABSCT.yaml --seed 23
+python main.py --base configs/efficientUnet_CHAOS_to_SABSCT.yaml --seed 23
 ```
 </details>
 
@@ -169,12 +169,12 @@ python python main.py --base configs/efficientUnet_CHAOS_to_SABSCT.yaml --seed 2
   
 For direction bSSFP -> LEG, run the command 
 ```bash
-python python main.py --base configs/efficientUnet_bSSFP_to_LEG.yaml --seed 23
+python main.py --base configs/efficientUnet_bSSFP_to_LEG.yaml --seed 23
 ```
 
 For direction LEG -> bSSFP, run the command 
 ```bash
-python python main.py --base configs/efficientUnet_LEG_to_bSSFP.yaml --seed 23
+python main.py --base configs/efficientUnet_LEG_to_bSSFP.yaml --seed 23
 ```
 </details>
 
