@@ -180,7 +180,7 @@ python python main.py --base configs/efficientUnet_LEG_to_bSSFP.yaml --seed 23
 
 ## Acknowledgements
 
-Our codes are built upon [CSDG](https://github.com/cheng-01037/Causality-Medical-Image-Domain-Generalization), thanks for theri contribution to the community and the development of researches!
+Our codes are built upon [CSDG](https://github.com/cheng-01037/Causality-Medical-Image-Domain-Generalization), thanks for their contribution to the community and the development of researches!
 
 ## Citation
 If our work or code helps you, please consider to cite our paper. Thank you!
