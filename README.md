@@ -151,12 +151,12 @@ To reproduce the performance, you need one 3090 GPU
     <b>1) Cross-modality Abdominal Dataset</b>
   </summary>
   
-For direction MRI -> CT, run the command 
+For direction CT -> MRI, run the command 
 ```bash
 python main.py --base configs/efficientUnet_SABSCT_to_CHAOS.yaml --seed 23
 ```
 
-For direction CT -> MRI, run the command 
+For direction MRI -> CT, run the command 
 ```bash
 python main.py --base configs/efficientUnet_CHAOS_to_SABSCT.yaml --seed 23
 ```
