@@ -151,7 +151,7 @@ class CardiacDataset(torch_data.Dataset):
 
                 img = np.float32(img)
                 if self.normalize_op.mean is not None:
-                    vol_info={'vol_vmin':img.min(),'vol_vmax':img.max(),'vol_mean':self.normalize_op.mean,'vol_std':self.normalize_op.mean}
+                    vol_info={'vol_vmin':img.min(),'vol_vmax':img.max(),'vol_mean':self.normalize_op.mean,'vol_std':self.normalize_op.std}
                 else:
                     vol_info = {'vol_vmin': img.min(), 'vol_vmax': img.max(), 'vol_mean': img.mean(), 'vol_std': img.std()}
                 img = self.normalize_op(img)
