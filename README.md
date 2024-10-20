@@ -1,9 +1,6 @@
 # SLAug
 
 ## Rethinking Data Augmentation for Single-source Domain Generalization in Medical Image Segmentation, AAAI 2023. [ArXiv](https://arxiv.org/pdf/2211.14805.pdf)
-Zixian Su*, Kai Yao*, Xi Yang, Qiufeng Wang, Jie Sun, Kaizhu Huang \
-Both University of Liverpool and Xi'an Jiaotong-liverpool University \
-(*equal contribution)
 
 **Abstract**
 
